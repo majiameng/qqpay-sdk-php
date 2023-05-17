@@ -22,7 +22,7 @@ $params = [
 
 //发起支付请求
 try {
-    $client = new \QQPay\PaymentService($qqpay_config);
+    $client = new \tinymeng\pay\QQPay\PaymentService($qqpay_config);
     $result = $client->appPay($params);
     print_r($result);
 } catch (Exception $e) {

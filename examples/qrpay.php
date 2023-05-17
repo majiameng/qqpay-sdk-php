@@ -22,7 +22,7 @@ $params = [
 
 //发起支付请求
 try {
-    $client = new \QQPay\PaymentService($qqpay_config);
+    $client = new \tinymeng\pay\QQPay\PaymentService($qqpay_config);
     $result = $client->nativePay($params);
     echo 'QQ钱包支付下单成功！支付二维码链接：'.$result['code_url'];
 } catch (Exception $e) {

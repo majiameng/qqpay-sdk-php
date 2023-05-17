@@ -17,7 +17,7 @@ $memo = '备注内容'; //转账备注
 
 //发起转账请求
 try {
-    $client = new \QQPay\TransferService($qqpay_config);
+    $client = new \tinymeng\pay\QQPay\TransferService($qqpay_config);
     $result = $client->transfer($out_trade_no, $payee_account, $payee_real_name, $money, $memo);
     echo '转账成功！QQ钱包转账订单号：'.$result['transaction_id'];
 } catch (Exception $e) {

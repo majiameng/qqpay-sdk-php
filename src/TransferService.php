@@ -1,6 +1,6 @@
 <?php
 
-namespace QQPay;
+namespace tinymeng\pay\QQPay;
 
 /**
  * QQ钱包转账服务类
